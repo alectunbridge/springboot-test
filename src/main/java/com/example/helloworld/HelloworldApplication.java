@@ -1,7 +1,6 @@
 
 package com.example.helloworld;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,7 +12,7 @@ public class HelloworldApplication {
 
 	@RestController
 	class HelloworldController {
-		@GetMapping("/")
+		@GetMapping("/api")
 		String hello(@RequestParam String name) {
 			return "Hello " + name + "!";
 		}
