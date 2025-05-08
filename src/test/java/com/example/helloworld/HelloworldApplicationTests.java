@@ -10,6 +10,7 @@ class HelloworldApplicationTests {
 
 	@Test
 	void contextLoads() {
+		//whitespace change to trigger a build
 		assertEquals( 1 + 1, 2 );
 	}
 
