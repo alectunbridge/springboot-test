@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.sql.DataSource;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 @RestController
 class HelloworldController {
@@ -16,7 +18,17 @@ class HelloworldController {
     }
 
     @GetMapping("/api")
-    String hello(@RequestParam String name) {
-        return "Hello " + name + "!";
+    String hello(@RequestParam String surname) throws SQLException {
+        String firstName = "";
+
+        try (Statement stmt = dataSource.getConnection().createStatement()) {
+            if (stmt.execute("select * from person where last_name = '" + surname + "'")) {
+                if (stmt.getResultSet().next()) {
+                    firstName = stmt.getResultSet().getString(2);
+                }
+            }
+
+        }
+        return "Hello " + firstName;
     }
 }

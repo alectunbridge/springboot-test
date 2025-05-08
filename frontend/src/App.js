@@ -8,7 +8,7 @@ class App extends Component {
     };
 
     async componentDidMount() {
-        const response = await fetch('/api?name=jammy');
+        const response = await fetch('/api?surname=Syer');
         const body = await response.text();
         this.setState({data: body});
     }
