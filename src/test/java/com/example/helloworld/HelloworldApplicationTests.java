@@ -10,7 +10,7 @@ class HelloworldApplicationTests {
 
 	@Test
 	void contextLoads() {
-		assertEquals( 1 + 1, 777 );
+		assertEquals( 1 + 1, 2 );
 	}
 
 }
