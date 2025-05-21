@@ -1,7 +1,19 @@
 {
-    "environments": {
+  "buildpacks": [
+    {
+      "url": "heroku/java"
+    }
+  ],
+  "environments": {
     "review": {
-      "addons": ["heroku-postgresql:essential-0"]
-      }
+      "addons": [
+        "heroku-postgresql:essential-0"
+      ]
+    },
+    "test": {
+      "addons": [
+        "heroku-postgresql:in-dyno"
+      ]
+    }
   }
 }
