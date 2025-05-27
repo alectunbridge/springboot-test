@@ -70,6 +70,10 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>com.example.helloworld.HelloworldApplication</mainClass>
+				</configuration>
+
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -77,16 +81,25 @@
 				<version>3.3.1</version>
 				<executions>
 					<execution>
-						<id>copy-resources</id>
-						<phase>process-classes</phase>
+						<id>resources</id>
+						<phase>prepare-package</phase>
 						<goals>
-							<goal>copy-resources</goal>
+							<goal>resources</goal>
 						</goals>
 						<configuration>
 							<outputDirectory>${basedir}/target/classes/static</outputDirectory>
 							<resources>
 								<resource>
-									<directory>frontend/build</directory>
+									<directory>megaday-2025-app/build/client/</directory>
+									<includes>
+										<include>**/*</include>
+									</includes>
+								</resource>
+								<resource>
+									<directory>src/main/resources/</directory>
+									<includes>
+										<include>**/*</include>
+									</includes>
 								</resource>
 							</resources>
 						</configuration>
@@ -98,7 +111,7 @@
 				<artifactId>frontend-maven-plugin</artifactId>
 				<version>${frontend-maven-plugin.version}</version>
 				<configuration>
-					<workingDirectory>frontend</workingDirectory>
+					<workingDirectory>megaday-2025-app</workingDirectory>
 				</configuration>
 				<executions>
 					<execution>
