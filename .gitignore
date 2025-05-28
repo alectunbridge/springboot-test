@@ -34,4 +34,4 @@ build/
 
 ### Front-end stuff ###
 /src/main/resources/static/client/**
-**/node/yarn/dist/**
+/megaday-2025-app/node/yarn/dist/**
