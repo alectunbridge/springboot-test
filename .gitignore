@@ -34,4 +34,4 @@ build/
 
 ### Front-end stuff ###
 /src/main/resources/static/client/**
-!**/dist/bin/
+!**/node/yarn/dist/
