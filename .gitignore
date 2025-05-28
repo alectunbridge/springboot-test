@@ -35,3 +35,6 @@ build/
 ### Front-end stuff ###
 /src/main/resources/static/client/**
 /megaday-2025-app/node/**
+/megaday-2025-app/node_modules
+/megaday-2025-app/.react-router
+
