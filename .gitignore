@@ -31,4 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Front-end stuff ###
 /src/main/resources/static/client/**
+!**/dist/bin/
