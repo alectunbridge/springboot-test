@@ -25,15 +25,11 @@ target/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
 ### VS Code ###
 .vscode/
 
 ### Front-end stuff ###
-/src/main/resources/static/client/**
 /megaday-2025-app/node/**
 /megaday-2025-app/node_modules
 /megaday-2025-app/.react-router
