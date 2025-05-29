@@ -73,39 +73,6 @@
 				<configuration>
 					<mainClass>com.example.helloworld.HelloworldApplication</mainClass>
 				</configuration>
-
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>3.3.1</version>
-				<executions>
-					<execution>
-						<id>resources</id>
-						<phase>prepare-package</phase>
-						<goals>
-							<goal>resources</goal>
-						</goals>
-						<configuration>
-<!--							<outputDirectory>${basedir}/target/classes/static</outputDirectory>-->
-<!--&lt;!&ndash;							<outputDirectory>${basedir}/target/classes/static</outputDirectory>&ndash;&gt;-->
-<!--							<resources>-->
-<!--&lt;!&ndash;								<resource>&ndash;&gt;-->
-<!--&lt;!&ndash;									<directory>megaday-2025-app/build/client/</directory>&ndash;&gt;-->
-<!--&lt;!&ndash;									<includes>&ndash;&gt;-->
-<!--&lt;!&ndash;										<include>**/*</include>&ndash;&gt;-->
-<!--&lt;!&ndash;									</includes>&ndash;&gt;-->
-<!--&lt;!&ndash;								</resource>&ndash;&gt;-->
-<!--								<resource>-->
-<!--									<directory>src/main/resources/static/client/**</directory>-->
-<!--									<includes>-->
-<!--										<include>**/*</include>-->
-<!--									</includes>-->
-<!--								</resource>-->
-<!--							</resources>-->
-						</configuration>
-					</execution>
-				</executions>
 			</plugin>
 			<plugin>
 				<groupId>com.github.eirslett</groupId>
