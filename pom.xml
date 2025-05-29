@@ -87,21 +87,22 @@
 							<goal>resources</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>${basedir}/target/classes/static</outputDirectory>
-							<resources>
-								<resource>
-									<directory>megaday-2025-app/build/client/</directory>
-									<includes>
-										<include>**/*</include>
-									</includes>
-								</resource>
-								<resource>
-									<directory>src/main/resources/</directory>
-									<includes>
-										<include>**/*</include>
-									</includes>
-								</resource>
-							</resources>
+<!--							<outputDirectory>${basedir}/target/classes/static</outputDirectory>-->
+<!--&lt;!&ndash;							<outputDirectory>${basedir}/target/classes/static</outputDirectory>&ndash;&gt;-->
+<!--							<resources>-->
+<!--&lt;!&ndash;								<resource>&ndash;&gt;-->
+<!--&lt;!&ndash;									<directory>megaday-2025-app/build/client/</directory>&ndash;&gt;-->
+<!--&lt;!&ndash;									<includes>&ndash;&gt;-->
+<!--&lt;!&ndash;										<include>**/*</include>&ndash;&gt;-->
+<!--&lt;!&ndash;									</includes>&ndash;&gt;-->
+<!--&lt;!&ndash;								</resource>&ndash;&gt;-->
+<!--								<resource>-->
+<!--									<directory>src/main/resources/static/client/**</directory>-->
+<!--									<includes>-->
+<!--										<include>**/*</include>-->
+<!--									</includes>-->
+<!--								</resource>-->
+<!--							</resources>-->
 						</configuration>
 					</execution>
 				</executions>

@@ -1,9 +1,10 @@
 import type { Route } from "../+types/root";
+import {Env} from "~/Env";
 
 export async function clientLoader({
     params,
 }: Route.LoaderArgs) {
-    return await fetch(`/api?surname=Syer`);
+    return await fetch(`${Env.API_BASE_URL}?surname=Syer`);
 }
 
 export default function CallApi({loaderData}: Route.ComponentProps) {

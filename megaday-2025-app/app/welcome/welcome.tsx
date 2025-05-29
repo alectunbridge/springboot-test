@@ -86,4 +86,9 @@ const resources = [
       </svg>
     ),
   },
+  {
+    href: "callapi",
+    text: "Call a Rest API",
+    icon: null
+  }
 ];
