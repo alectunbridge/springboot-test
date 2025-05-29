@@ -70,35 +70,16 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>3.3.1</version>
-				<executions>
-					<execution>
-						<id>copy-resources</id>
-						<phase>process-classes</phase>
-						<goals>
-							<goal>copy-resources</goal>
-						</goals>
-						<configuration>
-							<outputDirectory>${basedir}/target/classes/static</outputDirectory>
-							<resources>
-								<resource>
-									<directory>frontend/build</directory>
-								</resource>
-							</resources>
-						</configuration>
-					</execution>
-				</executions>
+				<configuration>
+					<mainClass>com.example.helloworld.HelloworldApplication</mainClass>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>com.github.eirslett</groupId>
 				<artifactId>frontend-maven-plugin</artifactId>
 				<version>${frontend-maven-plugin.version}</version>
 				<configuration>
-					<workingDirectory>frontend</workingDirectory>
+					<workingDirectory>megaday-2025-app</workingDirectory>
 				</configuration>
 				<executions>
 					<execution>
