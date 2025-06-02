@@ -30,6 +30,6 @@ class HelloworldController {
 
         }
         //whitespace rules
-        return "Hello " + firstName + " six geese a laying";
+        return "Hello " + firstName + " 5 GOLD RINGS!";
     }
 }
