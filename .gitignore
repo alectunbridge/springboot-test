@@ -33,4 +33,7 @@ target/
 /megaday-2025-app/node/**
 /megaday-2025-app/node_modules
 /megaday-2025-app/.react-router
-
+/assets
+/src/main/resources/static
+/megaday-2025-app/build
+*.log
