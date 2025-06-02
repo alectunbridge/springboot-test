@@ -27,8 +27,3 @@ HELP.md
 ### VS Code ###
 .vscode/
 
-### Front-end stuff ###
-/megaday-2025-app/node/**
-/megaday-2025-app/node_modules
-/megaday-2025-app/.react-router
-
