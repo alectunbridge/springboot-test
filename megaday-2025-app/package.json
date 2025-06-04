@@ -11,6 +11,7 @@
     "test": "scripts/test.sh"
   },
   "dependencies": {
+    "@picocss/pico": "^2.1.1",
     "@react-router/node": "^7.5.3",
     "@react-router/serve": "^7.5.3",
     "isbot": "^5.1.27",
@@ -21,11 +22,10 @@
   },
   "devDependencies": {
     "@react-router/dev": "^7.5.3",
-    "@tailwindcss/vite": "^4.1.4",
     "@types/node": "^20",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
-    "tailwindcss": "^4.1.4",
+    "sass": "^1.89.1",
     "typescript": "^5.8.3",
     "vite": "^6.3.3",
     "vite-tsconfig-paths": "^5.1.4"

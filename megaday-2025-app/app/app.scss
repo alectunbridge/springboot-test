@@ -1,0 +1,11 @@
+@use "@picocss/pico/scss/pico";
+
+/* Overwrite theme here */
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  --pico-primary: #0534ff;
+  --pico-primary-background: #0534ff;
+  --pico-primary-hover-background: #0828af;
+  --pico-primary-underline: #0534ff;
+  --pico-primary-underline-hover: #0828af;
+}
